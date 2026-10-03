@@ -2,7 +2,7 @@
 
 ### 6) Dentro de su directorio HOME, cree mediante el comando cat y redireccionamiento un archivo de texto llamado identidad.txt que contenga únicamente su Nombre, Apellido y Legajo. Cierre elflujo usando la combinación de teclas adecuada.
 
-```
+``` Python
 cd $HOME
 cat > identidad.txt      //Crea archivo y te permite escribir sobre el
 Nombre: Alejandro
@@ -23,7 +23,7 @@ Note: mkdir se utiliza para crear directorios, mientras que cat trabaja con el c
 ### 7) Copie el archivo /etc/passwd del sistema a su directorio Laboratorio01/seguro de dos maneras independientes:
 #### -Método 1: Utilice únicamente rutas absolutas para el origen y el destino.
 
-```
+``` Python
 cp /etc/passwd /home/alejandro/Laboratorio01/seguro
 
 $ ls Laboratorio01/seguro
@@ -36,7 +36,7 @@ Note: cp (copy) copia archivos siguiendo la estructura cp ORIGEN DESTINO. En est
 
 #### -Método 2: Ubíquese primero en su $HOME y copie usando rutas relativas.
 
-```
+``` Python
 cp ../../etc/passwd Laboratorio01/seguro
 ls Laboratorio01/seguro
 
@@ -47,7 +47,7 @@ Una ruta relativa se interpreta desde el directorio actual. .. representa el dir
 ```
 
 ### 8) Muestre por pantalla de forma paginada el contenido del archivo passwd copiado dentro de su carpeta seguro. ¿Cuál es la tecla para salir de la visualización antes de llegar al final?
-```
+```Python
 $ more Laboratorio01/seguro/passwd
 
 Result:
@@ -58,7 +58,7 @@ Note: more permite visualizar el contenido de un archivo de forma paginada, a di
 
 ### 9) Extraiga únicamente las primeras 5 líneas del archivo passwd que copió en el paso anterior. Luego, extraiga las últimas 3 líneas. ¿Qué comando usó en cada caso?
 #### Primeras 5 líneas:
-```
+``` Python
 head -n 5 passwd
 
 Result: Se muestran las primeras 5 líneas del archivo passwd.
@@ -68,7 +68,7 @@ Note: head permite visualizar el comienzo de un archivo y tail su final. Por def
 
 #### Últimas 3 líneas
 
-```
+``` Python
 tail -n 3 passwd
 
 Result: Se muestran las últimas 3 líneas del archivo passwd.
@@ -80,7 +80,7 @@ Note: Tail -n 3 las últimas 3. Estos comandos permiten consultar una parte del 
 ### 10) Intente eliminar el directorio temporal que contiene el subdirectorio basura utilizando el comando rmdir. ¿Qué mensaje de error devuelve el sistema y a qué se debe? Explique cómo solucionarlo para realizar el borrado de forma interactiva (pidiendo confirmación para cada archivo/directorio)
 
 #### Intento con rmdir:
-```
+``` Python
 rmdir temporal
 
 Result: rmdir: failed to remove 'temporal': Directory not empty
@@ -89,7 +89,7 @@ Note: rmdir (remove directory) se utiliza para eliminar directorios vacíos. Si 
 ```
 
 #### Eliminación iterativa:
-```
+``` Python
 rm -ri temporal
 
 Result:
