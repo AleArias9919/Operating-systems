@@ -1,6 +1,6 @@
-<img width="1345" height="644" alt="image" src="https://github.com/user-attachments/assets/123a0df4-cac3-4d68-80d3-c362e2f185e2" />## Bloque E: Redireccionamientos y Tuberías.
+# Bloque E: Redireccionamientos y Tuberías.
 
-### 26) Cree un archivo de texto llamado cronologia.txt que contenga la fecha y hora actuales mediante el comando date y redirección . A continuación, ejecute un comando que liste los procesos activos en ese momento (ps) y anexe esos datos al final de cronologia.txt sin alterar la fecha previamente guardada. Verifique el contenido final del archivo.
+## 26) Cree un archivo de texto llamado cronologia.txt que contenga la fecha y hora actuales mediante el comando date y redirección . A continuación, ejecute un comando que liste los procesos activos en ese momento (ps) y anexe esos datos al final de cronologia.txt sin alterar la fecha previamente guardada. Verifique el contenido final del archivo.
 
 ```Python
 Command:
@@ -23,7 +23,7 @@ date muestra la fecha y hora actual, mientras que ps (process status) muestra lo
 Así, primero se guardó la fecha con > y luego se agregó la información de los procesos con >>.
 ```
 
-### 27) Intente listar con ls un archivo inexistente en su directorio de conexión (por ejemplo, ls archivo_fantasma). Compruebe el error devuelto. Luego, repita el comando pero redirigiendo de forma exclusiva la salida de errores estándar (stderr) a un archivo llamado errores.log de manera que en la pantalla de la terminal no se visualice ningún mensaje de error .
+## 27) Intente listar con ls un archivo inexistente en su directorio de conexión (por ejemplo, ls archivo_fantasma). Compruebe el error devuelto. Luego, repita el comando pero redirigiendo de forma exclusiva la salida de errores estándar (stderr) a un archivo llamado errores.log de manera que en la pantalla de la terminal no se visualice ningún mensaje de error .
 
 ```Python
 Command:
@@ -43,7 +43,7 @@ Los comandos tienen una salida normal y una salida de error separadas.
 Al ejecutar ls sobre un archivo inexistente, el error normalmente aparece en pantalla. Con 2> errores.log, ese error se guarda en el archivo errores.log.
 ```
 
-### 28) Utilice la herramienta tee para listar por pantalla el contenido de su directorio personal y, al mismo tiempo, guardar una copia exacta de esa salida en un archivo llamado registro_personal.txt.
+## 28) Utilice la herramienta tee para listar por pantalla el contenido de su directorio personal y, al mismo tiempo, guardar una copia exacta de esa salida en un archivo llamado registro_personal.txt.
 
 ```
 Command:
@@ -61,7 +61,7 @@ tee recibe esa información y hace dos cosas al mismo tiempo: la muestra en pant
 Así, el listado de $HOME se mostró en la terminal y también quedó almacenado en personal_record.txt.
 ```
 
-### 29) Conecte de manera secuencial mediante una tubería (pipeline) los comandos who y wc -l para calcular y mostrar por pantalla cuántos usuarios tienen una sesión activa actualmente en el sistema. Explique paso a paso el viaje de la información a través de esta tubería .
+## 29) Conecte de manera secuencial mediante una tubería (pipeline) los comandos who y wc -l para calcular y mostrar por pantalla cuántos usuarios tienen una sesión activa actualmente en el sistema. Explique paso a paso el viaje de la información a través de esta tubería .
 
 ```
 Command:
@@ -79,7 +79,7 @@ La tubería | toma la salida de who y la utiliza como entrada de wc -l. Por lo t
 En este entorno WSL, who no mostró ninguna sesión registrada, por eso el resultado fue 0.
 ```
 
-### 30) Muestre por pantalla las primeras 15 líneas del archivo de configuración del sistema /etc/passwd pero ordénelas alfabéticamente a través de una tubería. Detalle los comandos de la tubería utilizados .
+## 30) Muestre por pantalla las primeras 15 líneas del archivo de configuración del sistema /etc/passwd pero ordénelas alfabéticamente a través de una tubería. Detalle los comandos de la tubería utilizados .
 
 ```
 Command:
