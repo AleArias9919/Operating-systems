@@ -1,4 +1,4 @@
-### 1)Compruebe la ruta exacta de su directorio de conexión. Guarde este resultado.
+### 1) Compruebe la ruta exacta de su directorio de conexión. Guarde este resultado.
 
 ```Python
 alejandro@NotebookdeAle:~$ pwd
