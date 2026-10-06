@@ -17,7 +17,10 @@ Nombre: Alejandro
 Apellido: Arias
 Legajo: 30640
 
-Note: mkdir se utiliza para crear directorios, mientras que cat trabaja con el contenido de archivos. cat archivo.txt muestra su contenido. Al usar cat > archivo.txt, cat recibe datos desde el teclado y > redirige esa información hacia el archivo; si no existe, se crea. Ctrl+D envía EOF (End Of File), indicando que terminó la entrada de datos; no es lo que “guarda” el archivo.
+Note:
+-mkdir se utiliza para crear directorios, mientras que cat trabaja con el contenido de archivos.
+-cat archivo.txt muestra su contenido. Al usar cat > archivo.txt, cat recibe datos desde el teclado y > redirige esa información hacia el archivo; si no existe, se crea.
+-Ctrl+D envía EOF (End Of File), indicando que terminó la entrada de datos; no es lo que “guarda” el archivo.
 ```
 
 ### 7) Copie el archivo /etc/passwd del sistema a su directorio Laboratorio01/seguro de dos maneras independientes:
@@ -30,7 +33,8 @@ $ ls Laboratorio01/seguro
 
 Result: passwd
 
-Note: cp (copy) copia archivos siguiendo la estructura cp ORIGEN DESTINO. En este ejercicio se copia el archivo /etc/passwd al directorio seguro.
+Note: cp (copy) copia archivos siguiendo la estructura cp ORIGEN DESTINO.
+-En este ejercicio se copia el archivo /etc/passwd al directorio seguro.
 -Una ruta absoluta comienza desde la raíz /,
 ```
 
@@ -42,7 +46,8 @@ ls Laboratorio01/seguro
 
 Result: passwd
 
-Note: cp (copy) copia archivos siguiendo la estructura cp ORIGEN DESTINO. En este ejercicio se copia el archivo /etc/passwd al directorio seguro.
+Note: cp (copy) copia archivos siguiendo la estructura cp ORIGEN DESTINO.
+-En este ejercicio se copia el archivo /etc/passwd al directorio seguro.
 Una ruta relativa se interpreta desde el directorio actual. .. representa el directorio padre y permite referirse a ubicaciones superiores sin tener que moverse con cd.
 ```
 
