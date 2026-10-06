@@ -1,6 +1,6 @@
 ### 1)Compruebe la ruta exacta de su directorio de conexión. Guarde este resultado.
 
-```
+```Python
 alejandro@NotebookdeAle:~$ pwd
 
 Result: /home/alejandro
@@ -10,7 +10,7 @@ Note: pwd (Print Working Directory) muestra la ruta absoluta del directorio actu
 
 ### 2) Posiciónese en el directorio / (raíz). Ejecute un comando que muestre todos los archivos ocultos presentes en él.
 
-```
+```Python
 alejandro@NotebookdeAle:~$ cd /
 alejandro@NotebookdeAle:/$ ls -a
 .  ..  bin  boot  dev  etc  home  init  lib  lib64  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
@@ -20,7 +20,7 @@ Note: cd / posiciona en el directorio raíz   ---    ls -a lista todo su conteni
 
 ### 3) Desplácese al directorio /bin y verifique con el comando apropiado qué terminal tiene asignada su sesión actual.
 
-```
+```Python
 alejandro@NotebookdeAle:/$ cd bin
 alejandro@NotebookdeAle:/bin$ tty
 /dev/pts/0
@@ -30,7 +30,7 @@ Note: cd bin desplaza al directorio /bin. tty muestra la terminal asignada a la 
 
 ### 4) Intente regresar a su directorio HOME usando tres variantes de comando diferentes (absoluta, relativa y por variable de entorno). Escriba las órdenes ejecutadas.
 
-```
+```Python
 # Ruta absoluta
 $ cd /home/alejandro
 
@@ -55,7 +55,7 @@ Note: Las tres órdenes llegan al mismo directorio: /home/alejandro.
 #### -Dentro de Laboratorio01, cree dos directorios llamados seguro y temporal.
 #### -Dentro de temporal, cree un subdirectorio llamado basura
 
-```
+```Python
 $ mkdir Laboratorio01
 $ cd Laboratorio01
 $ mkdir seguro
